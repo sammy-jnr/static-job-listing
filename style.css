@@ -82,14 +82,13 @@ body{
 #card{
     width: auto;
     margin: 15px ;
-    margin-top: 50px;
     background-color: white;
     height: auto;
-    padding: 10px 20px;
+    padding: 10px 0px;
     border-radius: 10px;
-    margin: 90px 0;
-    z-index: 2;
+    margin-top: 50px;
 }
+
 #nojob_div{
     position: relative;
     width: auto;
@@ -103,6 +102,12 @@ body{
     border-radius: 10px;
     margin: 20px;
     display: none;
+    text-align: center;
+}
+.first_text{
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
 }
 #companyImage{
     top: -50px;
@@ -174,5 +179,185 @@ hr{
     margin-left: 0;
     width: auto;
     border-radius: 5px;
+}
+
+@media screen and (min-width:768px){
+    #card{
+        width: auto;
+        margin: auto;
+        margin: 15px ;
+        background-color: white;
+        height: auto;
+        padding: 10px 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+    #companyImage{
+        top: 0px;
+        left: 20px;
+        position: relative;
+        height: 100px;
+    }
+    #upper_div{
+        width: auto;
+        min-width: 400px;
+        margin: 0 25px ;
+        height: auto;
+        padding: 10px 10px;
+        border-radius: 10px;
+        position: relative;
+        top: 30px;
+    }
+    #tagsDiv{
+        top: 0px;
+        height: auto;
+        margin-top: 0;
+    }
+    
+    hr{
+        top: -40px;
+        position: relative;
+        margin: 10px 20px;
+        display: none;
+    }
+    #select_category{
+        width: 300px;
+        height: auto;
+    }
+    .selections{
+        height: 40px;
+        font-size: 20px;
+    }
+    .checkboxes{
+        width: 25px;
+        height: 25px;
+    }
+    .checkboxes:hover{cursor: pointer;}
+    #check_categories_btn{
+        font-size: 20px;
+        padding: 10px;
+    }
+    #check_categories_btn:hover{
+        cursor: pointer;
+    }
+    #nojob_div, .first_text{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    #card{
+        width: auto;
+        margin: 15px ;
+        background-color: white;
+        height: auto;
+        padding: 10px 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+   
+    #upper_div{
+        width: auto;
+        min-width: 500px;
+        margin: 0 25px ;
+        height: auto;
+        padding: 10px 10px;
+        border-radius: 10px;
+        position: relative;
+        top: 30px;  
+    }
+    #tagsDiv{
+        top: 0px;
+        height: auto;
+    }
+   .tags{
+       margin: 10px 30px;
+       font-size: 20px;
+   }
+   #companyname{
+    color: rgb(22, 163, 173);
+    font-size: 20px;
+   }
+    #jobDescription{
+        color: rgb(1, 48, 36);
+        font-size: 24px;
+   }
+   #select_category{
+    width: 350px;
+        height: auto;
+    }
+    .selections{
+        height: 50px;
+        font-size: 25px;
+    }
+    .checkboxes{
+        width: 30px;
+        height: 30px;
+    }
+    .checkboxes:hover{cursor: pointer;}
+    #nojob_div,.first_text{
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    #card{
+        width: 1600px;
+        margin: 15px auto;
+        background-color: white;
+        height: auto;
+        padding: 10px 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+   
+    #upper_div{
+        width: auto;
+        min-width: 500px;
+        margin: 0 25px ;
+        height: auto;
+        padding: 10px 10px;
+        border-radius: 10px;
+        position: relative;
+        top: 30px;  
+    }
+   
+   .tags{
+       margin: 0 30px;
+       font-size: 23px;
+   }
+   #companyname{
+    color: rgb(22, 163, 173);
+    font-size: 23px;
+   }
+    #jobDescription{
+        color: rgb(1, 48, 36);
+        font-size: 27px;
+   }
+   #cardlastline{
+       font-size: 18px;
+   }
+   #select_category{
+       width: 400px;
+       height: auto;
+   }
+   .selections{
+       height: 50px;
+       font-size: 25px;
+   }
+   .checkboxes{
+       width: 30px;
+       height: 30px;
+   }
+   .checkboxes:hover{cursor: pointer;}
+   #nojob_div,.first_text{
+    font-size: 60px;
+   }
+   .tags{
+    margin: 10px 20px;
+   }
 }
 

@@ -267,9 +267,12 @@ check_categories_btn.addEventListener("click", ()=>{
             companyImage.id = "companyImage"
             companyImage.setAttribute("src", `${objectarray[i].imgSRC}`)
             cards.appendChild(companyImage)
+            let upper_div = document.createElement("DIV")
+            upper_div.id ="upper_div"
+            cards.appendChild(upper_div)
             let cardFirstLine = document.createElement("DIV")
             cardFirstLine.id = "cardFirstLine"
-            cards.appendChild(cardFirstLine)
+            upper_div.appendChild(cardFirstLine)
             let companyname = document.createElement("DIV")
             companyname.id = "companyname"
             companyname.innerHTML = `${objectarray[i].companyName}`
@@ -285,10 +288,10 @@ check_categories_btn.addEventListener("click", ()=>{
             let jobDescription = document.createElement("DIV")
             jobDescription.id = "jobDescription"
             jobDescription.innerHTML = `${objectarray[i].jobTitle}`
-            cards.appendChild(jobDescription)
+            upper_div.appendChild(jobDescription)
             let cardlastline = document.createElement("DIV")
             cardlastline.id = "cardlastline"
-            cards.appendChild(cardlastline)
+            upper_div.appendChild(cardlastline)
             let postdate = document.createElement("DIV")
             postdate.id = "postdate"
             postdate.innerHTML = `${objectarray[i].days}`
@@ -308,7 +311,7 @@ check_categories_btn.addEventListener("click", ()=>{
             location.innerHTML = `${objectarray[i].location}`
             cardlastline.appendChild(location)
             let line = document.createElement("hr")
-            cards.appendChild(line)
+            upper_div.appendChild(line)
             let tagsDiv = document.createElement("DIV")
             tagsDiv.id = "tagsDiv"
             cards.appendChild(tagsDiv)
