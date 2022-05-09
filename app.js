@@ -321,12 +321,9 @@ check_categories_btn.addEventListener("click", ()=>{
             
         }
         
-    } 
-            let cards = document.createElement("DIV")
-            cards.id ="card"
-            cards.innerHTML = "NO SUCH JOBS AVAILABLE NOW"
-            lower_body.appendChild(cards)
-    
+    } if(lower_body.innerHTML === ""){
+        document.getElementById("nojob_div").style.display ="block"
+    }else{document.getElementById("nojob_div").style.display ="none"}
     select_category.style.display = "none"
     
 })
