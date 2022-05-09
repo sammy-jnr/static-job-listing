@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(192, 218, 215);
+}
+#container{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    background-color: rgb(192, 218, 215);
+}
+#search_icon{
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    z-index: 2;
+    background-color: transparent;
+    width: 30px;
+}
+#select_category{
+    position: absolute;
+    margin: 10px;
+    width: 220px;
+    z-index: 2;
+    min-height: 300px;
+    height: auto;
+    background-color: rgb(222, 238, 236);
+    top: 40px;
+    padding: 20px;
+    padding-top: 50px;
+    right: 10px;
+    display: none;
+}
+#close_icon{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 20px;
+}
+#check_categories_btn{
+    position: absolute;
+    top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    padding: 4px;
+    background-color: black;
+    border: none;
+    color: rgb(22, 163, 173);
+}
+.selections{
+    background-color: rgb(22, 163, 173);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 7px;
+}
+.checkboxes{
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+#heading{
+    width: 100vw;
+    height: 150px;
+    background-image: url("images\\bg-header-mobile.svg");
+
+}
+#lower_body{
+    width: 100vw;
+    height: 600px;
+    padding-top: 10px;
+}
+#card{
+    width: auto;
+    margin: 15px ;
+    margin-top: 50px;
+    background-color: white;
+    /* min-height: 300px; */
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 90px 0;
+}
+#companyImage{
+    top: -50px;
+    left: 20px;
+    position: relative;
+}
+#cardFirstLine,#jobDescription,#cardlastline{
+    width: auto;
+    height: 40px;
+    position: relative;
+    top: -40px;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+}
+#companyname{
+    color: rgb(22, 163, 173);
+}
+#jobDescription{
+    color: rgb(1, 48, 36);
+    font-size: 19px;
+}
+hr{
+    top: -40px;
+    position: relative;
+    margin: 10px 20px;
+}
+.emptyspace{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: grey;
+}
+#cardlastline{
+    color: grey;
+}
+#companyname-TAGNew,#companyname-TAGFeatured{
+    border-radius: 16px;
+    background-color: rgb(22, 163, 173);
+    padding: 5px 9px;
+}
+#companyname-TAGFeatured{
+    background-color: rgb(7, 53, 53);
+}
+#tagsDiv{
+    width: auto;
+    height: auto;
+    position: relative;
+    top: -40px;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 40px;
+    font-weight: bolder;
+}
+.tags{
+    padding: 5px 7px;
+    background-color: rgb(179, 233, 215);
+    color: rgb(22, 163, 173);
+    margin: 10px 20px;
+    margin-left: 0;
+    width: auto;
+    border-radius: 5px;
+}
+
